@@ -10,6 +10,7 @@ services:
       - ./app/app:/app
     environment:
       - APACHE_SERVER_NAME=patchcablemgr.com
+      - PHP_UPLOAD_MAX_FILESIZE=10M
     restart: on-failure
 
   database:
